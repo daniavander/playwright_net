@@ -1,0 +1,65 @@
+{
+  "cookies": [
+    {
+      "name": "UnasProxyID",
+      "value": "s31~ProxyOK",
+      "domain": ".unas.hu",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "UnasAdminID",
+      "value": "8466ce89ad391391a68bac60d6586348",
+      "domain": ".unas.hu",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.1128932357.1752099717",
+      "domain": ".unas.hu",
+      "path": "/",
+      "expires": 1786659732.691937,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "UnasCookieConsent",
+      "value": "%7B%22time%22%3A1752099722%2C%22id%22%3A%2245dc51ea48657ad19f53e56ef06982a4%22%2C%22marketing%22%3A1%2C%22statistics%22%3A1%2C%22personalization%22%3A1%7D",
+      "domain": ".unas.hu",
+      "path": "/",
+      "expires": 1783635721.302556,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_5DFX34RBF9",
+      "value": "GS2.1.s1752099717$o1$g1$t1752099732$j49$l0$h0",
+      "domain": ".unas.hu",
+      "path": "/",
+      "expires": 1786659732.105446,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_T51KWZCXE9",
+      "value": "GS2.1.s1752099732$o1$g0$t1752099732$j60$l0$h0",
+      "domain": ".unas.hu",
+      "path": "/",
+      "expires": 1786659732.705438,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "ecommerce website",
+  "keywords": [
+    "smoke"
+  ],
+  "license": "ISC",
+  "author": "daniel kovacs",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "smoke": "playwright test --config=playwright.config.ts --project=smoke --workers=1 --headed --grep @smoke",
+    "admin": "playwright test --config=playwright.config.ts --project=admin --workers=1 --headed --grep @smoke",
+    "savestate": "playwright test --config=playwright.config.ts --project=savestate --workers=1 --headed"
+    
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "@playwright/test": "^1.53.2",
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^24.0.10",
+    "dotenv": "^17.2.0"
+  }
+}

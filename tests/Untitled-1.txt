@@ -1,0 +1,8 @@
+/tests/           # Test specs (UI, API, hybrid)
+/pages/           # Page Object Models (POM)
+/services/        # API service abstractions
+/fixtures/        # Custom Playwright fixtures
+/utils/           # Utilities (data gen, validation, retry)
+/config/          # Config files, .env, test data
+/playwright.config.ts
+/.env

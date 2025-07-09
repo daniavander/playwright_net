@@ -1,0 +1,12 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="1" errors="0" time="15.016519">
+<testsuite name="tests\e2e\admin.spec.ts" timestamp="2025-07-09T22:22:29.340Z" hostname="smoke" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Admin case entities › [222] check admin" classname="tests\e2e\admin.spec.ts" time="0">
+<properties>
+<property name="test case" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>

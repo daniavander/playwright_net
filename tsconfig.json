@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es2021",
+    "strict": true,
+    "strictNullChecks": false,
+    "module": "commonjs",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".", //current project
+    "esModuleInterop": true,
+    "lib": ["es2015", "es2021", "dom", "es2019"],
+    "noImplicitAny": false,
+    "paths": {
+      "@pages/*": ["page-objects/*"],
+      "@fixtures/*": ["fixtures/*"],
+      "@api/*": ["services/api/*"],
+      "@apiData/*": ["src/api/*"]
+    },
+    //"types": ["axe-playwright","node"],
+    "typeRoots": ["./node_modules/@types", "tests/bddt/src/helper/types/env.d.ts"]
+  },
+  "include": ["src", "./playwright.config.ts", "tests/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
