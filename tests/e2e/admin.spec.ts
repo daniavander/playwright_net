@@ -37,7 +37,7 @@ test.describe('Admin case entities', () => {
     await page.close();
   });
 
-  test.only('[222] check admin', { tag: ['@smoke'], annotation: [{ type: 'test case'}] }, async ({request}) => {
+  test.skip('[222] check admin', { tag: ['@smoke'], annotation: [{ type: 'test case'}] }, async ({request}) => {
   let incidentId: string;
 
     await test.step(`Login to admin`, async () => {
@@ -47,8 +47,14 @@ test.describe('Admin case entities', () => {
     });
 
     await test.step(`Open admin`, async () => {
-      await page.pause();
+      await page.getByRole('textbox', { name: 'Felhasználónév Email cím' }).fill('kovacsdani04');
+      await page.getByRole('textbox', { name: 'Felhasználónév Email cím' }).press('Tab');
+      await page.getByRole('textbox', { name: 'Jelszó' }).fill('19900604');
+      await page.getByRole('textbox', { name: 'Jelszó' }).press('Enter');
+      await page.getByRole('button', { name: 'Belépés ' }).click();
       await page.goto('https://shop.unas.hu/admin_order.php')
+      await expect(page.getByText('Nincs kiegyenlítve!')).toBeVisible();
+      await expect(page.getByText('Kiegyenlítve:')).toBeVisible();
     });
   });
 });
