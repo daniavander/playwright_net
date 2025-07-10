@@ -11,9 +11,6 @@ env:
   VERSION: 7.2
   TZ: Europe/Budapest
   CI: true
-  LANG: hu_HU.UTF-8
-  LOCALE: hu_HU
-  LANGUAGE: hu
 
 jobs:
   deploy_tests:
