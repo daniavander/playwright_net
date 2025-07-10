@@ -1,0 +1,7 @@
+{
+  "title": "New Product dsgf",
+  "price": 10,
+  "description": "A description",
+  "categoryId": 1,
+  "images": ["https://placehold.co/600x400"]
+}
