@@ -12,8 +12,8 @@
   "scripts": {
     "smoke": "playwright test --config=playwright.config.ts --project=smoke --workers=1 --grep @smoke",
     "admin": "playwright test --config=playwright.config.ts --project=admin --workers=1 --headed --grep @smoke",
+    "api": "playwright test --config=playwright.config.ts --project=api --workers=1",
     "savestate": "playwright test --config=playwright.config.ts --project=savestate --workers=1 --headed"
-    
   },
   "devDependencies": {
     "@faker-js/faker": "^9.9.0",
@@ -21,5 +21,8 @@
     "@types/dotenv": "^6.1.1",
     "@types/node": "^24.0.10",
     "dotenv": "^17.2.0"
+  },
+  "dependencies": {
+    "zod": "^4.0.2"
   }
 }

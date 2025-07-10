@@ -23,7 +23,16 @@ test.describe('Admin case entities', () => {
   });
 
   test.beforeEach(async () => {
-    await page.goto('');
+    await page.context().addCookies([{
+      name: 'language',
+      value: 'hu',
+      domain: 'www.steeldecor.hu',
+      path: '/',
+      httpOnly: false,
+      secure: true,
+      sameSite: 'Lax',
+    }]);
+    await page.goto('/', { waitUntil: 'domcontentloaded' });
     await uiFuncs.closeBonusPopup();
   });
 
