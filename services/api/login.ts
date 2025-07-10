@@ -9,15 +9,14 @@ export class ApiFuncs {
     this.page = page;
   }
 
-  async apiCall(request: APIRequestContext, method: string, url: string, headers: any, data?: any, timeout = 20_000) {
+  async apiCall(request: APIRequestContext, method: string, url: string, headers?: any, data?: any, timeout = 20_000) {
     let response: APIResponse;
     const options: any = { headers, timeout };
 
     // Only add 'data' for methods that support a body
-    if (data && ['POST', 'PUT', 'PATCH'].includes(method.toUpperCase())) {
+    if (data && ['POST', 'PUT', 'PATCH', 'DELETE'].includes(method.toUpperCase())) {
       options.data = data;
     }
-    console.log(timeout)
 
     switch (method.toUpperCase()) {
       case 'GET':

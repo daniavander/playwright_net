@@ -38,7 +38,7 @@ export default defineConfig({
   projects: [
     {
       name: 'smoke',
-      testMatch: ['**/tests/e2e/*.spec.ts'],
+      testMatch: ['**/tests/e2e/*.spec.ts','**/tests/api/*.spec.ts'],
       use: {
         viewport: { width: 1300, height: 700 },
         //storageState: STAGE_STATE,

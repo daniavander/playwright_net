@@ -33,13 +33,15 @@ jobs:
       - name: 🧩 Install Playwright browsers
         run: npx playwright install --with-deps chromium
 
-      - name: 🚀 Run tests with smoke flag
-        run: npm run smoke
+      - name: 🚀 Run tests with api flag
+        run: npm run api
         env:
           AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
           AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
           AZURE_TARGET_SCOPE: ${{ secrets.AZURE_TARGET_SCOPE }}
+          ADMIN_NAME: ${{ secrets.ADMIN_NAME }}
+          ADMIN_PWD: ${{ secrets.ADMIN_PWD }}
 
       - name: 📝 Publish JUnit Test Results
         if: always()
