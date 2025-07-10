@@ -1,8 +1,17 @@
 🧪 Automated Tests – Playwright E2E Suite
 
 This project contains end-to-end (E2E) tests using Playwright, supporting Chromium-based browsers, and is intended for smoke, regression, and UI workflow testing.
-
+Supports both:
+- ✅ **UI tests** (E2E via POM)
+- ✅ **API tests** (CRUD & integration scenarios)
 ---
+## 📦 Tech Stack
+
+- [Playwright](https://playwright.dev) with TypeScript
+- Zod (for schema validation)
+- Faker (dynamic test data)
+- dotenv (environment management)
+- GitHub Actions (CI/CD)
 
 📦 Prerequisites
 
