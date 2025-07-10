@@ -53,7 +53,6 @@ test.describe('Admin case entities', () => {
       await page.getByRole('button', { name: 'cart button' }).click();
       await page.getByRole('button', { name: 'Pénztár' }).click();
       await page.getByRole('button', { name: 'Regisztráció nélkül vásárolok' }).click();
-      await page.pause();
       await expect(page).toHaveURL(/shop_reg\.php\?no_reg=1$/);
     });
 
