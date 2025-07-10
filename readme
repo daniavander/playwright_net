@@ -1,0 +1,91 @@
+🧪 Automated Tests – Playwright E2E Suite
+
+This project contains end-to-end (E2E) tests using Playwright, supporting Chromium-based browsers, and is intended for smoke, regression, and UI workflow testing.
+
+---
+
+📦 Prerequisites
+
+- Node.js >= 18.x
+- npm (comes with Node.js)
+- VS Code (for MCP plugin)
+- Git (optional, for version control)
+
+---
+
+🚀 Getting Started
+
+1. Clone the Repository
+
+    git clone [repourl]]
+
+2. Install Dependencies
+
+    npm i
+
+3. Install Playwright Browsers
+
+    npx playwright install --with-deps
+
+    > This installs Chromium and any dependencies required for browser testing on your OS.
+
+4. Run the Tests
+
+    npm run deploy
+
+    > Customize the deploy script in package.json if necessary.
+
+---
+
+🔌 Optional: Playwright MCP (Microsoft Code Plugin)
+
+The Playwright MCP plugin provides a better developer experience inside VS Code by enabling intelligent test execution and UI.
+
+🛠️ Install MCP in VS Code
+
+1. Press Ctrl + Shift + P (or Cmd + Shift + P on macOS)
+2. Run: Install Playwright MCP Server
+3. Check that settings.json includes:
+
+    "servers": {
+      "playwright": {
+        "command": "npx",
+        "args": [
+          "@playwright/mcp@latest"
+        ]
+      }
+    }
+
+You should now see:
+- >>running<< for the MCP server
+- Options to Stop or Restart
+
+---
+
+🧠 VS Code Copilot Agent Mode (Optional)
+
+1. Open Copilot Chat
+2. Switch to Agent Mode
+3. Interact with the test suite using natural language
+   - e.g., "Run the login tests"
+   - e.g., "What does test X do?"
+
+    > ⚠️ Ensure Playwright MCP is running to enable chat-based test control.
+
+---
+
+📊 Test Report
+
+After running the tests, you can open the report:
+
+    npx playwright show-report
+
+Or just open playwright-report/index.html in your browser.
+
+---
+
+✅ Tips
+
+- Use npm run lint (if configured) to check code quality
+- Run specific test files: npx playwright test tests/login.spec.ts
+- Use tags or projects to filter tests in large suites
