@@ -23,11 +23,6 @@ export default defineConfig({
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    locale: 'hu-HU',
-    // Also set Accept-Language header
-    extraHTTPHeaders: {
-      'Accept-Language': 'hu-HU,hu;q=0.9',
-    },
     actionTimeout: process.env.CI ? 18 * 1000 : 0, // 18 seconds for CI, 60 seconds for local development
     headless: process.env.CI ? true : false,
     launchOptions: {
